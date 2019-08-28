@@ -1,0 +1,318 @@
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-width: 360px;
+}
+
+@media screen and (max-width:360px) {
+    body {
+        overflow-x: scroll;
+        min-width: 360px;
+    }
+}
+
+@keyframes fadin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mainContent {
+    min-width: 360px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("../image/backMain.jpg");
+    background-position: center;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding: 0%;
+    animation-name: fadin;
+    -webkit-animation-name: fadin;
+    animation-duration: 2000ms;
+    -webkit-animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+    -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-animation-delay: 500;
+}
+
+.sample {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+    left: 0%;
+    top: 100%;
+    background-color: red;
+    transition: top 1.5s ease-in-out;
+    -webkit-transition: top 1.5s ease-in-out;
+    -moz-transition: top 1.5s ease-in-out;
+    -ms-transition: top 1.5s ease-in-out;
+    -o-transition: top 1.5s ease-in-out;
+}
+
+.title {
+    position: fixed;
+    width: 50%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.card {
+    position: relative;
+    width: 375px;
+    height: 100%;
+    margin-left: 1%;
+    display: inline-block;
+}
+
+.headerCard {
+    width: 362px;
+    height: 15%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(49, 56, 63, 0.5);
+    top: 1px;
+    box-shadow: inset 1px 1px 1px 2px rgba(78, 79, 88, 0.945);
+    margin-bottom: 2px;
+    color: white;
+}
+
+.picCard {
+    width: 362px;
+    height: 240px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5px;
+    background-color: rgb(49, 56, 63);
+    top: 2px;
+    box-shadow: inset 1px 1px 1px 2px rgba(78, 79, 88, 0.945);
+    margin-bottom: 2px;
+}
+
+.picCard img {
+    width: 98%;
+    height: 98%;
+    position: relative;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.detailsCard {
+    width: 362px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5px;
+    background-color: rgba(49, 56, 63, 0.5);
+    top: 2px;
+    box-shadow: inset 1px 1px 1px 2px rgba(78, 79, 88, 0.945);
+    margin-bottom: 2px;
+    bottom: 0px;
+}
+
+.containerCard {
+    position: relative;
+    width: 100%;
+    height: 97%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 10px 3px rgb(66, 70, 59);
+    padding-top: 1%;
+    margin-top: 1%;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contactMe {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5em;
+    position: fixed;
+    width: 340px;
+    height: 70px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -70px);
+    -webkit-transform: translate(-50%, -70px);
+    -moz-transform: translate(-50%, -70px);
+    -ms-transform: translate(-50%, -70px);
+    -o-transform: translate(-50%, -70px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: linear-gradient(-30deg, rgba(0, 0, 0, 0.39), rgba(116, 116, 116, 0.479));
+    background: -webkit-linear-gradient(-30deg, rgba(0, 0, 0, 0.39), rgba(116, 116, 116, 0.479));
+    background: -moz-linear-gradient(-30deg, rgba(0, 0, 0, 0.39), rgba(116, 116, 116, 0.479));
+    cursor: hand;
+}
+
+.contactMe:hover {
+    cursor: pointer;
+    background: linear-gradient(30deg, rgba(116, 116, 116, 0.479), rgba(0, 0, 0, 0.39));
+    background: -webkit-linear-gradient(38deg, rgba(116, 116, 116, 0.479), rgba(0, 0, 0, 0.39));
+    background: -moz-linear-gradient(30deg, rgba(116, 116, 116, 0.479), rgba(0, 0, 0, 0.39));
+}
+
+.blos {
+    height: 40%;
+    width: auto;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+/***** Social media and Code Hub ****/
+
+.smedia {
+    position: fixed;
+    height: 10%;
+    width: 30%;
+    top: 2%;
+    right: 0%;
+   
+    
+}
+.smedia span{
+    font-size: small;
+   
+}
+
+.smi {
+    margin-top: 10%;
+    margin-right: 10%;
+    height: 90%;
+    width: 20%;
+    float: right;
+    position: relative;
+}
+
+
+
+.smi span {
+    color: rgb(192, 192, 192);
+    position: absolute;
+    bottom: 0px;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.smi img {
+    width: auto;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    opacity: 0.3;
+    /****setcenter*****/
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.smi img:hover {
+    opacity: 1.0;
+}
+
+.side {
+    top: 50%;
+    width: 10%;
+    right: 0px;
+    position: absolute;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+}
+
+
+/******** Width < 570  **********/
+
+@media screen and (max-width: 570px) {
+    .title {
+        width: 80%;
+    }
+    .smedia {
+        width: 100%;
+        position: fixed;
+    }
+    .card {
+        margin-left: auto;
+        height: 70%;
+        ;
+    }
+    .sample {
+        overflow: scroll;
+        width: 100%;
+        top: 0%;
+        padding-top: 120%;
+        margin-top: 30%;
+        text-align: center;
+    }
+    .contactMe {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:1024px) {
+   
+    .smedia span{
+        font-size: medium;
+
+    }
+   
+}
+@media screen and (min-width:1440px) {
+   
+    .smedia span{
+        font-size: large;
+
+    }
+   
+}
+
